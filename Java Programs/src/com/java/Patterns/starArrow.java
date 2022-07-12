@@ -1,4 +1,5 @@
 package com.java.Patterns;
+
 import java.util.Scanner;
 /*
  **
@@ -14,15 +15,10 @@ public class starArrow {
         int n = inp.nextInt();
 
         // upside triangle
-        for (int row = 1; row < 2*n; row++) {
-            for (int j = 1; j <=n; j++) {
-                if(row<=n) {   // logic for upside triangle
-                    if(j<=row)
-                    System.out.print("* ");
-                }
-                else          // logic for downside triangle
-                    if(j<=2*n-row)
-                    System.out.print("* ");
+        for (int row = 1; row < 2 * n; row++) {
+            int colInEachRow = row > n ? 2 * n - row : row;
+            for (int col = 1; col <= colInEachRow; col++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
