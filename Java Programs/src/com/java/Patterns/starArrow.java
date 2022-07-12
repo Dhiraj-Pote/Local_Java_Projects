@@ -14,16 +14,15 @@ public class starArrow {
         int n = inp.nextInt();
 
         // upside triangle
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < i+1; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-        // downside triangle
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-i-1; j++) {
-                System.out.print("*");
+        for (int row = 1; row < 2*n; row++) {
+            for (int j = 1; j <=n; j++) {
+                if(row<=n) {   // logic for upside triangle
+                    if(j<=row)
+                    System.out.print("* ");
+                }
+                else          // logic for downside triangle
+                    if(j<=2*n-row)
+                    System.out.print("* ");
             }
             System.out.println();
         }
