@@ -10,12 +10,12 @@ public class FiboFormula {
     }
 
     static int fibo(int n) {
-        double sq = Math.sqrt(5);
+        double sqrt = Math.sqrt(5);
         if(n<2) return n;
         if(n == 2) return 1;
         if(n == 3) return 2;
 
-        return (int) ((( Math.pow(((1 + sq)/2), n) ) - ( Math.pow(((1 - sq)/2), n) ) )/sq);
+        return (int) ((( Math.pow(((1 + sqrt)/2), n) ) - ( Math.pow(((1 - sqrt)/2), n) ) )/sqrt);
     }
 
 }
