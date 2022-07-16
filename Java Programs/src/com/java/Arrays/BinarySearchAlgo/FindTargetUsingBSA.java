@@ -3,7 +3,7 @@ package com.java.Arrays.BinarySearchAlgo;
 public class FindTargetUsingBSA {       // when you know that the Array is sorted
     public static void main(String[] args) {
         int[] arr = {22, 30, 35, 39, 45, 60, 71};
-        int target = 71;
+        int target = 22;
         System.out.println(BinarySearch(arr, target));
     }
 

@@ -11,7 +11,7 @@ public class BinarySearchIn2DArray {
                 {21, 26, 37, 49},
                 {24, 27, 39, 52},
         };
-        System.out.println(Arrays.toString(search(arr, 37)));
+        System.out.println(Arrays.toString(search(arr, 49)));
     }
 
     static int[] search(int[][] arr, int target) {

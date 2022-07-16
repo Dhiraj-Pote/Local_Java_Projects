@@ -5,8 +5,8 @@ public class EvenNos {
         int[] arr = {-12, 4, 91, -2244, 0, 72, 9961};  // 5 nos. having even length
 
         int count = 0;
-        for (int nums : arr) {
-            if (even(nums)) {
+        for (int num : arr) {
+            if (even(num)) {
                 count++;
             }
         }
