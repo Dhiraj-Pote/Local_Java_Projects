@@ -1,5 +1,6 @@
 package com.java.Arrays;
 // https://leetcode.com/problems/move-zeroes/
+
 import java.util.Arrays;
 
 public class MoveZerosToRight {
@@ -9,16 +10,15 @@ public class MoveZerosToRight {
         System.out.println(Arrays.toString(nums));
     }
 
-        static void moveZeroes(int[] nums) {
-            int snowBallSize = 0;
-            for (int i=0;i<nums.length;i++){
-                if (nums[i]==0){
-                    snowBallSize++;
-                }
-                else if (snowBallSize > 0) {
-                   nums[i - snowBallSize] = nums[i];
-                   nums[i] = 0;
-                }
+    static void moveZeroes(int[] nums) {
+        int snowBallSize = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                snowBallSize++;
+            } else if (snowBallSize > 0) {
+                nums[i - snowBallSize] = nums[i]; // swap 0 & number
+                nums[i] = 0;
             }
         }
     }
+}

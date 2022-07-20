@@ -5,8 +5,8 @@ package com.java.Basics;
 public class FiboFormula {
     public static void main(String[] args) {
         for (int i = 0; i < 12; i++) {
-            System.out.println(fibo(i));
-        }
+        System.out.println(fibo(i));
+    }
     }
 
     static int fibo(int n) {

@@ -2,33 +2,21 @@ package com.java.Basics;
 
 import java.util.Scanner;
 
-class string_capitalize{
+class string_capitalize {
     public static void main(String[] args) {
 
         // create a string.
         Scanner inp = new Scanner(System.in);
-                String message = inp.nextLine();
+        String message = inp.nextLine();
         // stores each characters to a char array
         char[] charArray = message.toCharArray();
-        boolean foundSpace = true;
 
-        for(int i = 0; i < charArray.length; i++) {
+        for (int i = 0; i < charArray.length; i++) {
 
             // if the array element is a letter
-            if(Character.isLetter(charArray[i])) {
-
-                // check space is present before the letter
-                if(foundSpace) {
-
-                    // change the letter into uppercase
-                    charArray[i] = Character.toUpperCase(charArray[i]);
-                    foundSpace = false;
-                }
-            }
-
-            else {
-                // if the new character is not character
-                foundSpace = true;
+            if (Character.isLetter(charArray[i])) {
+                // change the letter into uppercase
+                charArray[i] = Character.toUpperCase(charArray[i]);
             }
         }
 

@@ -1,8 +1,8 @@
-package com.java.Basics;
+package com.java.Arrays;
 
-public class majorityElement_mooresVotingAlgo {
+public class majorityElement_moresVotingAlgo {
     public static void main(String[] args) {
-        int[] nums = {5,5,5,2,2,2,2,2};
+        int[] nums = {5,5,1,2};
         System.out.println(majorityElement(nums));
     }
 
@@ -11,11 +11,11 @@ public class majorityElement_mooresVotingAlgo {
         for(int i = 1; i < nums.length; i++){
             if(nums[i] == mE){
                 count++;
-            }else if(count==0){
+            }
+            if(count==0){
                 mE = nums[i];
                 count = 1;
-            }
-            else
+            } else
                 count --;
         }
         return mE;

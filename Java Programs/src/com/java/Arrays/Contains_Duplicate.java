@@ -5,7 +5,7 @@ import java.util.Set;
 //https://leetcode.com/problems/contains-duplicate
 public class Contains_Duplicate {
     public static void main(String[] args) {
-        int[] nums = {5,2,3,1,9};
+        int[] nums = {5,2,3,8,9,1};
         System.out.println(containsDuplicate(nums));
     }
     static boolean containsDuplicate(int[] nums) {
