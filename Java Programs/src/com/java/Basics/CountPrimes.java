@@ -1,7 +1,7 @@
 package com.java.Basics;
-
 //https://leetcode.com/problems/count-primes/
 // Given an integer n, return the number of prime numbers that are strictly less than n.
+
 public class CountPrimes {
     public static void main(String[] args) {
         int n = 30;

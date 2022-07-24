@@ -2,20 +2,15 @@ package com.java.Basics;
 
 public class SqrtOfNum {
         public static void main(String[] args) {
-            System.out.println(mySqrt(69));
+            int n = 64;
+            System.out.println(mySqrt(n));
         }
 
-        static int mySqrt(int x) {
-            long s = 0, e = x, ans =0;
-            while(s<=e){
-                long m = s + (e-s)/2 ;
-                if(m*m<=x){
-                    ans=m;
-                    s = m+1;
-                }
-                else
-                    e = m-1;
+        static int mySqrt(int n) {
+            int ans = 0;
+            while (ans*ans <= n) {
+                ans++;
             }
-            return (int)ans;
+            return ans - 1;
         }
 }
