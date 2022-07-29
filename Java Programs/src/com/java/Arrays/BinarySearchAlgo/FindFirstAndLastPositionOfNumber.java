@@ -1,12 +1,11 @@
 package com.java.Arrays.BinarySearchAlgo;
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
-
 import java.util.Arrays;
 
 public class FindFirstAndLastPositionOfNumber {
     public static void main(String[] args) {
         int[] nums = {1, 5, 5, 5, 5, 7, 7, 8, 9};
-        int target = 5;
+        int target = 7;
         System.out.println(Arrays.toString(searchRange(nums, target)));
     }
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Plus_One_inArray {
     public static void main(String[] args) {
-        int[] nums = { 4,9,9,9 };
+        int[] nums = { 9,9 };
         System.out.println(Arrays.toString(addOne(nums)));
     }
 
@@ -20,5 +20,4 @@ public class Plus_One_inArray {
                 newNums[0] = 1;
         return newNums;
     }
-
 }

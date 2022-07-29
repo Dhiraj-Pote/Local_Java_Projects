@@ -2,7 +2,7 @@ package com.java.Basics;
 
 public class SqrtOfNum {
         public static void main(String[] args) {
-            int n = 64;
+            int n = 8;
             System.out.println(mySqrt(n));
         }
 
