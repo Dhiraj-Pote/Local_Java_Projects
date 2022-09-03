@@ -1,4 +1,4 @@
-package com.java.Arrays.SortingAlgorithms;
+package com.java.Arrays.SortingAlgorithms.SelectionSort;
 // Sort the array using insertion sort
 import java.util.Arrays;
 

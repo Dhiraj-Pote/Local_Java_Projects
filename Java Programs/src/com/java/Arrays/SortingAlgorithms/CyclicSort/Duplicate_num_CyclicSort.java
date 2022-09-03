@@ -1,4 +1,4 @@
-package com.java.Arrays.SortingAlgorithms;
+package com.java.Arrays.SortingAlgorithms.CyclicSort;
 // AMAZON https://leetcode.com/problems/find-the-duplicate-number/submissions/
 public class Duplicate_num_CyclicSort {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.java.Arrays.SortingAlgorithms;
+package com.java.Arrays.SortingAlgorithms.InsertionSort;
 // Sort arrays using Insertion Sort Algorithm
 import java.util.Arrays;
 

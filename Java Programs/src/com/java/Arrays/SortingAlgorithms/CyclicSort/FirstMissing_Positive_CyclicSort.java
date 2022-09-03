@@ -1,9 +1,8 @@
-package com.java.Arrays.SortingAlgorithms;
-// AMAZON Quesn.   https://leetcode.com/problems/missing-number/
+package com.java.Arrays.SortingAlgorithms.CyclicSort;
 
-public class MissingNum_CyclicSort {
+public class FirstMissing_Positive_CyclicSort {
     public static void main(String[] args) {
-        int[] nums = { 4,0,5,3,1 };  // 1-N nos. distinct nos.
+        int[] nums = { 3,4,-1,1 };  // 1-N nos. distinct nos.
         sort(nums);
         System.out.println(sort(nums));
     }
@@ -11,15 +10,15 @@ public class MissingNum_CyclicSort {
     static int sort(int[] nums) {
         int i = 0;
         while (i<nums.length){
-            if (nums[i] < nums.length && nums[i] != nums[nums[i]]) {
-                swap(nums, i, nums[i]);
+            if ( nums[i] > 0 && nums[i] <= nums.length  && nums[i] != nums[nums[i]-1]) {
+                swap(nums, i, nums[i]-1);
             }
             else i++;
         }
         for (int j = 0; j < nums.length; j++) {
-            if(nums[j] != j) return j; // case 1 when max num is present in array
+            if(nums[j] != j+1) return j+1; // case 1 when max num is present in array
         }
-        return nums.length ;
+        return nums.length+1 ;
     }
 
     static void swap(int[] arr, int n1, int n2) {

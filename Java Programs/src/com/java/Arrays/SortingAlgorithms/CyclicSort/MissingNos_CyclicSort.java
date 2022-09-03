@@ -1,15 +1,16 @@
-package com.java.Arrays.SortingAlgorithms;
-// https://leetcode.com/problems/find-all-duplicates-in-an-array/
+package com.java.Arrays.SortingAlgorithms.CyclicSort;
+// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Find_AllDuplicates_CyclicSort {
+public class MissingNos_CyclicSort {
     public static void main(String[] args) {
-        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
-        System.out.println(findDuplicates(nums));
+        int[] nums = {2, 3, 6, 7, 8, 7, 2, 2, 1, 6};
+        System.out.println(findDisappearedNumbers(nums));
     }
 
-    static List<Integer> findDuplicates(int[] nums) {
+    static List<Integer> findDisappearedNumbers(int[] nums) {
 
         int i = 0;
         while (i < nums.length) {
@@ -20,7 +21,7 @@ public class Find_AllDuplicates_CyclicSort {
         List<Integer> ans = new ArrayList<>();
         for (int j = 0; j < nums.length; j++) {
             if (nums[j] != j + 1) {
-                ans.add(nums[j]);
+                ans.add(j + 1);
             }
         }
         return ans;
