@@ -1,4 +1,4 @@
-package com.java.TicTacToe;
+package com.java.Projects.TicTacToe;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -195,6 +195,4 @@ public class TicTacToe implements ActionListener {
         }
         textfield.setText("O wins");
     }
-
-
 }

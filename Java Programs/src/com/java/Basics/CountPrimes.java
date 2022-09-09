@@ -3,27 +3,18 @@ package com.java.Basics;
 // Given an integer n, return the number of prime numbers that are strictly less than n.
 
 public class CountPrimes {
-    public static void main(String[] args) {
-        int n = 30;
-        boolean[] prime = new boolean[n + 1];
-        System.out.println(isPrime(n, prime));
+    public void main(String[] args) {
+        int[] cost =  {1,2,3,2};
+        int[] time = {1,2,3,2};
+
+        System.out.println(getMinCost(cost));
     }
-
-    static int isPrime(int n, boolean[] prime) { // Sieve of Eratosthenes.
-        int count = 0;
-
-        if (n == 0 || n == 1) return 0;
-
-        for (int i = 2; i * i <= n; i++) {
-            if (!prime[i]) {
-                for (int j = 2 * i; j < n; j += i) {
-                    prime[j] = true;
-                }
-            }
+    static int getMinCost(int[] cost) {
+        int sum = cost[0];
+        int min = cost[1];
+        for (int i = 1; i < cost.length; i++) {
+            if(cost[i]<min) min = cost[i];
         }
-        for (int i = 2; i < n; i++) {
-            if (!prime[i]) count++;
-        }
-        return count;
+        return min + sum;
     }
 }

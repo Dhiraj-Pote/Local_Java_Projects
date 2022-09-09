@@ -2,7 +2,7 @@ package com.java.Arrays;
 
 public class majorityElement_moresVotingAlgo {
     public static void main(String[] args) {
-        int[] nums = {5, 5, 1, 2, 7, 7, 7};
+        int[] nums = {5, 7, 7, 5, 1, 2,7,5,5, 5, 5,5,5,7,7,7,7};
         System.out.println(majorityElement(nums));
     }
 
@@ -17,6 +17,6 @@ public class majorityElement_moresVotingAlgo {
             } else
                 count--;
         }
-        return count;
+        return mE;
     }
 }

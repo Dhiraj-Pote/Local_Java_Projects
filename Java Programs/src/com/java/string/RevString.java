@@ -7,7 +7,7 @@ public class RevString {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         // input for str
-        String str = in.nextLine();
+        String str = "Krishna";
         System.out.println(unaffectedChar(str));
     }
 
