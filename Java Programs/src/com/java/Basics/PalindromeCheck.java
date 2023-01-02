@@ -2,20 +2,18 @@ package com.java.Basics;
 
 public class PalindromeCheck {
     public static void main(String[] args) {
-        int number = 1120211;
+        int number = 121;
         System.out.println(isPalindrome2(number));
     }
 
     static boolean isPalindrome2(int number) {
-        int n=number,r=0,sum=0;
+        int n=number,r,sum=0;
         while(number>0){
             r=number%10;
             sum = sum*10+r;
             number = number/10;
         }
-        if(n == sum) return true;
-        else
-            return false;
+        return n == sum;
     }
 
 

@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class CountChar {
     public static void main(String[] args) {
-        String name = "dhddiraj";
+        String name = "krishnaa";
         char[] arr = name.toCharArray(); // [d, h, i, r, a, j]
 
         Map<Character, Integer> map = new HashMap<>();

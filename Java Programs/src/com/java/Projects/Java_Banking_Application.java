@@ -12,7 +12,7 @@ public class Java_Banking_Application {
         System.out.print("Enter your ID: ");
         String id = user.nextLine();
 
-        System.out.print("\\u000C");
+        System.out.print("\f");
 
         bankAccount obj1 = new bankAccount(name, id);
         obj1.showMenu();

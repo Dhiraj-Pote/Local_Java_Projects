@@ -1,5 +1,6 @@
 package com.java.Patterns;
 import java.util.Scanner;
+
 /*****
   ****
    ***

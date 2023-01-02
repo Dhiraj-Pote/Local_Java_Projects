@@ -24,13 +24,13 @@ public class SelectionSort {
         nums[lastIndex] = temp;
     }
 
-    static int IndexOfMaxNum(int[] nums, int eindex) {
-        int max = 0;
-        for (int i = 0; i <=eindex; i++) {
-            if(nums[i] > nums[max]){
-                max = i;
+    static int IndexOfMaxNum(int[] nums, int endindex) {
+        int maxIndex = 0;
+        for (int i = 0; i <=endindex; i++) {
+            if(nums[i] > nums[maxIndex]){
+                maxIndex = i;
             }
         }
-        return max;
+        return maxIndex;
     }
 }

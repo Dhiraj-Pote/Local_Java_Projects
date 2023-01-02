@@ -9,20 +9,15 @@ public class BubbleSort {
     }
 
     static void sort(int[] arr) {
-        boolean swapped;
-        int i = arr.length;  // i act as a counter to reduce the search space,
-        while(i>0) {
-            swapped = false;
+        int i = 0;  // i act as a counter to reduce the search space,
+        while(i<arr.length) {
             for (int j = 1; j < i; j++) {
                 if (arr[j] < arr[j - 1]) {
                     swap(arr, j,j-1);
-                    swapped = true;
+
                 }
             }
-            i--;
-            if (!swapped){
-                break;
-        }
+            i++;
         }
     }
     static void swap(int[] arr, int n1, int n2) {
